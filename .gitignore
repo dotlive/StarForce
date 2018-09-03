@@ -4,7 +4,9 @@
 /[Bb]uild/
 /[Bb]uilds/
 /Assets/AssetStoreTools*
+/Assets/Plugins*
 /.vs/
+/.idea/
 
 *.csproj
 *.unityproj
