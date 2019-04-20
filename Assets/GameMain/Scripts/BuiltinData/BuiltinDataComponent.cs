@@ -1,4 +1,11 @@
-﻿using GameFramework;
+﻿//------------------------------------------------------------
+// Game Framework
+// Copyright © 2013-2019 Jiang Yin. All rights reserved.
+// Homepage: http://gameframework.cn/
+// Feedback: mailto:jiangyin@gameframework.cn
+//------------------------------------------------------------
+
+using GameFramework;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
@@ -7,23 +14,12 @@ namespace StarForce
     public class BuiltinDataComponent : GameFrameworkComponent
     {
         [SerializeField]
-        private DeviceModelConfig m_DeviceModelConfig = null;
-
-        [SerializeField]
         private TextAsset m_BuildInfoTextAsset = null;
 
         [SerializeField]
         private TextAsset m_DefaultDictionaryTextAsset = null;
 
         private BuildInfo m_BuildInfo = null;
-
-        public DeviceModelConfig DeviceModelConfig
-        {
-            get
-            {
-                return m_DeviceModelConfig;
-            }
-        }
 
         public BuildInfo BuildInfo
         {

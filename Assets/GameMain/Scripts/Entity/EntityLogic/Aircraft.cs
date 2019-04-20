@@ -1,4 +1,11 @@
-﻿using GameFramework;
+﻿//------------------------------------------------------------
+// Game Framework
+// Copyright © 2013-2019 Jiang Yin. All rights reserved.
+// Homepage: http://gameframework.cn/
+// Feedback: mailto:jiangyin@gameframework.cn
+//------------------------------------------------------------
+
+using GameFramework;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityGameFramework.Runtime;
@@ -37,7 +44,7 @@ namespace StarForce
                 return;
             }
 
-            Name = string.Format("Aircraft ({0})", Id.ToString());
+            Name = Utility.Text.Format("Aircraft ({0})", Id.ToString());
 
             GameEntry.Entity.ShowThruster(m_AircraftData.GetThrusterData());
 
